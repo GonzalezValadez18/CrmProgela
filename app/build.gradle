@@ -1,0 +1,113 @@
+plugins {
+    alias(libs.plugins.android.application)
+}
+
+android {
+    namespace 'com.progela.crmprogela'
+    compileSdk 34
+
+    defaultConfig {
+        applicationId "com.progela.crmprogela"
+        minSdk 21
+        targetSdk 34
+        versionCode 3
+        versionName "3.1"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+buildFeatures{
+    viewBinding false
+}
+
+}
+
+dependencies {
+    implementation libs.material.v161
+    implementation libs.appcompat
+    implementation libs.material
+    implementation libs.activity
+    implementation libs.constraintlayout
+    implementation libs.cardview
+    testImplementation libs.junit
+    androidTestImplementation libs.ext.junit
+    androidTestImplementation libs.espresso.core
+    implementation libs.material.v180
+    implementation libs.material
+
+    implementation libs.appcompat.v161
+    implementation libs.constraintlayout
+    implementation libs.retrofit
+    implementation libs.converter.gson
+    implementation libs.gson
+    implementation libs.okhttp
+    testImplementation libs.junit
+    androidTestImplementation libs.junit.v115
+    androidTestImplementation libs.espresso.core.v351
+
+    implementation libs.lifecycle.viewmodel
+    implementation libs.lifecycle.livedata
+
+    // Rafa 19 ago 2024 para el MenuBottom
+    implementation libs.material
+    // Rafa 19 ago 2024 para el Recyclerview
+    implementation libs.glide
+    // Rafa 23 ago 2024 para la ubicación
+    implementation libs.play.services.location
+
+    //librerias para la camara
+    def cameraxVersion= "1.1.0-alpha05"
+
+    implementation libs.camera.view
+    implementation libs.camera.core
+    implementation libs.camera.camera2
+    implementation libs.camera.lifecycle
+
+    implementation libs.camera.view
+
+    // Para manejo de imágenes (opcional, pero útil para pruebas y depuración)
+    implementation libs.picasso
+
+    implementation libs.sdp.android
+
+    //libreria para el refresh layout
+    implementation libs.swiperefreshlayout
+    /**
+     * implementation 'androidx.appcompat:appcompat:1.6.1'
+     implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+     implementation 'com.squareup.retrofit2:retrofit:2.9.0'
+     implementation 'com.squareup.retrofit2:converter-gson:2.9.0'
+     implementation 'com.google.code.gson:gson:2.9.0'
+     implementation 'com.squareup.okhttp3:okhttp:4.9.3'
+     testImplementation 'junit:junit:4.13.2'
+     androidTestImplementation 'androidx.test.ext:junit:1.1.5'
+     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+     implementation 'androidx.lifecycle:lifecycle-viewmodel:2.8.3'
+     implementation 'androidx.lifecycle:lifecycle-livedata:2.8.3'
+     implementation 'com.google.android.gms:play-services-location:21.3.0'
+     RLR 10 Jul 24 Implementaciones para LiveData y arquitectura ViewModel
+     implementation 'androidx.lifecycle:lifecycle-viewmodel:2.8.3'
+     implementation 'androidx.lifecycle:lifecycle-livedata:2.8.3'
+     // Rafa 19 ago 2024 para el MenuBottom
+     implementation 'com.google.android.material:material:1.12.0'
+     *
+     *
+     */
+    //glide
+    dependencies {
+        implementation libs.glide.v4132
+        annotationProcessor libs.compiler
+    }
+
+
+}

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/etapa_1"
+        android:icon="@drawable/baseline_person_24"
+        android:title="Etapa 1" />
+    <item
+        android:id="@+id/etapa_2"
+        android:icon="@drawable/baseline_workspace_premium_24"
+        android:title="Etapa 2" />
+    <item
+        android:id="@+id/etapa_3"
+        android:icon="@drawable/baseline_123_24"
+        android:title="Etapa 3" />
+    <item
+        android:id="@+id/etapa_4"
+        android:icon="@drawable/baseline_email_24"
+        android:title="Etapa4" />
+</menu>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login3"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".prospectos.ui.view.encuesta.Encuesta10">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:background="@drawable/custom_edit_text"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="14dp">
+
+            <TextView
+                android:id="@+id/txtEncabezado"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="¿Qué opina de nuestra línea de productos y de nuestro laboratorio?"
+                android:textAlignment="center"
+                android:textColor="@color/blue_progela"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/txtUser"
+                android:layout_width="316dp"
+                android:layout_height="82dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/custom_edit_text"
+                android:drawableStart="@drawable/baseline_person_24"
+                android:hint="Opinión"
+                android:inputType="textAutoComplete"
+                android:maxLength="200"
+                android:padding="8dp"
+                android:textColor="@color/black"
+                android:textColorHighlight="@color/black" />
+
+            <EditText
+                android:id="@+id/txtUser"
+                android:layout_width="317dp"
+                android:layout_height="78dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/custom_edit_text"
+                android:drawableStart="@drawable/baseline_person_24"
+                android:hint="Observaciones"
+                android:maxLines="1"
+                android:padding="8dp"
+                android:textColor="@color/black"
+                android:inputType="textAutoComplete"
+                android:textColorHighlight="@color/black" />
+
+            <Button
+                android:id="@+id/btnFinaliza"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="15dp"
+                android:backgroundTint="@color/blue_progela"
+                android:text="Finalizar"
+                android:textSize="18sp"
+                app:cornerRadius="20dp" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>

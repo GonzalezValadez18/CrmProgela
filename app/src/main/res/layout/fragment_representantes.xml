@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+android:background="@drawable/login5"
+tools:context=".menu.ui.view.MenuFragments.RepresentantesFragment">
+
+<GridLayout
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:columnCount="2"
+    android:rowCount="2"
+    android:layout_marginLeft="24dp"
+    android:layout_marginRight="24dp"
+    android:layout_marginTop="190dp">
+    <androidx.cardview.widget.CardView
+        android:layout_width="150dp"
+        android:layout_height="10dp"
+        app:cardCornerRadius="15dp"
+        app:cardElevation="12dp"
+        android:layout_margin="12dp"
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        android:id="@+id/cardMisRepresentantes"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center">
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/baseline_supervised_user_circle_24"
+                android:id="@+id/imageMisRepresentantes"
+                android:layout_gravity="center_horizontal"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:text="@string/mis_representantes"
+                android:layout_gravity="center_horizontal"
+                android:textSize="18sp"
+                android:textColor="@color/blue_progela"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+    <!--<androidx.cardview.widget.CardView
+        android:layout_width="150dp"
+        android:layout_height="10dp"
+        app:cardCornerRadius="15dp"
+        app:cardElevation="12dp"
+        android:layout_margin="12dp"
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        android:id="@+id/cardMisClientes"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center">
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/baseline_edit_square_blue"
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/imageMisClientes"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Editar Transfer"
+                android:layout_gravity="center_horizontal"
+                android:textSize="18sp"
+                android:textColor="@color/blue_progela"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>-->
+
+</GridLayout>
+
+
+</RelativeLayout>

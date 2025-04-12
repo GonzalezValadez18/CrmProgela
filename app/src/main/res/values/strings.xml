@@ -1,0 +1,218 @@
+<resources>
+    <string name="app_name">CRM</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="open_nav">Open Navigation Drawer</string>
+    <string name="close_nav">Close Navigation Nav</string>
+    <!-- Pantalla de Login-->
+    <string name="login_usuario">Número de Empleado</string>
+    <string name="login_password">Contraseña</string>
+    <string name="login_btn_autenticar">Autenticar</string>
+    <string name="login_inicio">Inicio</string>
+    <string name="login_footer">®%d PROGELA Derechos Reservados</string>
+    <string name="version_label">VersionApp: </string>
+    <!-- Fragment Prospectos 30 jul 2024-->
+    <string name="btn_alta_prospectof">Prospecto Farmacia</string>
+    <string name="btn_alta_prospectopv">Prospecto Punto de Venta</string>
+    <string name="btn_alta_cliente">Alta Cliente</string>
+
+    <!-- Fragment Prospectos Etapa 1 30 jul 2024-->
+    <string name="txt_encabezado1">Etapa 1 de 4</string>
+    <string name="edit_razon_social">Razón Social</string>
+    <string name="edit_vialidad">Vialidad</string>
+    <string name="edit_calle">Nombre de la vialidad</string>
+    <string name="edit_numero_exterior">Núm.Exterior</string>
+    <string name="edit_numero_interior">Núm.Interior</string>
+    <string name="edit_manzana">Manzana</string>
+    <string name="edit_lote">Lote</string>
+    <string name="btn_prospectos_siguiente">Siguiente</string>
+    <string name="btn_prospectos_regresar">Regresar</string>
+
+    <!-- Fragment Prospectos Etapa 2 30 jul 2024-->
+    <string name="txt_encabezado25">Etapa 2 de 4</string>
+    <string name="edit_encargado">Nombre de contacto</string>
+    <string name="nom_cargo">Cargo</string>
+    <string name="fecha">Fecha de Aniversario</string>
+    <!-- Fragment Prospectos Etapa 3 30 jul 2024-->
+    <string name="txt_encabezado2">Etapa 3 de 4</string>
+    <string name="edit_codigo_postal">Código Postal</string>
+    <string name="edit_colonia">Colonia</string>
+    <string name="edit_alcaldia">Alcaldía / Municipio</string>
+    <string name="edit_estado">Estado</string>
+    <string name="btn_buscar">Buscar</string>
+    <!-- Fragment Home 12 sep 2024 RLR -->
+    <string name="txt_loading">No cierre la aplicación ni bloquee el equipo</string>
+
+    <!-- Fragment Prospectos Etapa 4 30 jul 2024-->
+    <string name="btn_prospectos_finalizar">Finaliza y Comenzar Encuesta</string>
+    <string name="txt_encabezado3">Etapa 4 de 4</string>
+    <string name="edit_dominio">Dominio</string>
+    <string name="edit_correo">Correo Electrónico</string>
+    <string name="edit_celular">Celular</string>
+    <string name="edit_telefono">Teléfono</string>
+    <string name="edit_extension">Extensión</string>
+    <!-- Elementos Menú   31 jul 2024-->
+    <string name="menu_prospectosf">Prospecto Farmacia</string>
+    <string name="menu_prospectosk">Clientes</string>
+    <string name="menu_prospectospv">Prospecto Puntos de Venta</string>
+    <!-- Elementos Prospectos Farmacia  31 jul 2024-->
+    <string name="alta_p_f">Alta Prospecto</string>
+    <string name="edt_p_f">Editar Prospecto</string>
+    <!-- Encuesta Representante 1 -->
+    <string name="encuesta1">¿Conoce Nuestra Línea de Productos?</string>
+    <string name="si">Si</string>
+    <string name="no">No</string>
+    <string name="continuar">Continuar</string>
+    <!-- Encuesta Representante 2 -->
+    <string name="encuesta2">¿Qué Productos de Nuestra Línea Maneja?</string>
+    <string name="p1">Seleccione el medicamento</string>
+    <string name="p2">Seleccione el medicamento</string>
+    <string name="p3">Seleccione el medicamento</string>
+    <string name="p4">Seleccione el medicamento</string>
+    <string name="p5">Seleccione el medicamento</string>
+    <!-- Encuesta Representante 3 -->
+    <string name="encuesta3">¿Cúales Son Sus Principales Distribuidores de Medicamentos?</string>
+    <string name="d1">Seleccione el distribuidor</string>
+    <string name="d2">Seleccione el distribuidor</string>
+    <string name="d3">Seleccione el distribuidor</string>
+    <string name="d4">Seleccione el distribuidor</string>
+    <string name="d5">Seleccione el distribuidor</string>
+    <!-- Encuesta Representante 4 -->
+    <string name="encuesta4">¿Cúales Son Los Productos Que Mas Vende En Su Negocio?</string>
+    <string name="c1">Seleccione el producto</string>
+    <string name="c2">Seleccione el producto</string>
+    <string name="c3">Seleccione el producto</string>
+    <string name="c4">Seleccione el producto</string>
+    <string name="c5">Seleccione el producto</string>
+    <!-- Encuesta Representante 5 -->
+    <string name="encuesta5">¿Qué Factores Son Importantes Para Su Realizar Una Compra En Su Negocio?</string>
+    <string name="cvPrecio">Precio</string>
+    <string name="cvPresentacion">Presentación</string>
+    <string name="cvCalidad">Calidad</string>
+    <string name="cvMarca">Marca</string>
+    <string name="finalizar">Finalizar encuesta</string>
+    <!-- Editar prospecto -->
+    <string name="editarEtapa1">Editar etapa 1</string>
+    <string name="editarEtapa2">Editar etapa 2</string>
+    <string name="editarEtapa3">Editar etapa 3</string>
+    <string name="editarEtapa4">Editar etapa 4</string>
+    <string name="confirmar">Confirmar y regresar</string>
+
+    <!-- Pantalla OFFline 23 ago 2024 Rafael Lemus-->
+    <string name="login_usuario_offline">Número de Empleado</string>
+    <string name="login_password_offline">Contraseña</string>
+    <string name="login_btn_autenticar_offline">Autenticar</string>
+    <string name="login_inicio_offline">Modo Avión</string>
+    <string name="login_footer_offline">®2024 PROGELA Derechos Reservados</string>
+
+    <!-- Fragment Home 29 ago 2024 Rafael Lemus-->
+    <string name="txt_sincronizar">Sincronizar</string>
+    <string name="txt_ultima_sincronizacion">Última Sincronización</string>
+    <string name="txt_cierra_sesion">Cerrar Sesión</string>
+
+    <!-- VIEW HOLDER AUTORIZAR-->
+    <string name="txtR">Representante:</string>
+    <string name="txtE">Encargado:</string>
+    <string name="txtRS">Razon Social:</string>
+    <string name="btnAutorizar">Autorizar</string>
+    <string name="autorizarFalse">FALTA ALGUN MEDIO DE CONTACTO</string>
+    <string name="autorizarSuccess">PUEDE AUTORIZAR A CLIENTE</string>
+    <!-- CARDS MENU EDITAR-->
+    <string name="txtEncuesta">Encuesta</string>
+    <string name="txtEditar">Editar</string>
+    <string name="txtPostVenta">Postventa</string>
+    <string name="txtPreventa">Preventa</string>
+    <!-- Transfer-->
+    <string name="txtIniciarVisita">Iniciar Visita</string>
+    <string name="txtTerminarVisita">Terminar Visita</string>
+    <string name="txtCancelarVisita">Cancelar Visita</string>
+    <string name="txtContinuarVisita">Continuar Visita</string>
+    <string name="txtMotivo">Motivo</string>
+    <string name="txtResultado">Resultado</string>
+    <string name="txtVisita">Visita</string>
+    <string name="textAgregar">Agregar</string>
+    <string name="textCancelar">Cancelar</string>
+    <string name="textComentarios">Comentarios (opcional)</string>
+
+    <!-- Dashboard Clientes y prospectos -->
+    <string name="visitados"> Clientes Visitados</string>
+    <string name="fechahora">15–10–2024 15:00:00</string>
+    <string name="levantamiento_de_pedido">Levantamiento de pedido</string>
+    <string name="farmacias_juanita_perez">Farmacias Juanita Perez</string>
+    <string name="mis_clientes">Mis Clientes</string>
+    <string name="iniciar_jornada">Iniciar Jornada</string>
+    <string name="marcar_entrada">Marcar Entrada</string>
+    <string name="subir_asistencia">Subir Asistencia</string>
+    <string name="enviar_ubicacion">Enviar ubicacion</string>
+    <string name="mis_chavos">Mis chavos</string>
+    <string name="mis_representantes">Mis Representantes</string>
+    <string name="clientes">Clientes</string>
+    <string name="prospectos">Prospectos</string>
+    <string name="inicio">Inicio</string>
+    <string name="representantes">Representantes</string>
+    <string name="agendar">Agendar</string>
+    <string name="formularios">Formularios</string>
+    <string name="navegar">Navegar</string>
+    <string name="iniciar_visita">Iniciar visita</string>
+    <string name="registrar_prospectos">Registrar prospectos</string>
+    <string name="catalogos">Catalogos</string>
+    <string name="actividad">Actividad</string>
+    <string name="medicamentos">Medicamentos</string>
+    <string name="codigos_postales">Codigos Postales</string>
+    <string name="m_xico">México</string>
+    <string name="hornos_de_santa_barbara">Hornos de Santa Barbara</string>
+    <string name="_56570">56570</string>
+    <string name="ixtapaluca">Ixtapaluca</string>
+    <!--Fragment actividades-->
+    <string name="linea_de_tiempo">Linea de Tiempo</string>
+    <string name="tablero">Tablero</string>
+    <string name="metas">Metas de Venta</string>
+    <!--Fragment actividades-->
+    <string name="falta_autorizacion">Falta Autorizacion</string>
+    <string name="yoselin_hernandez_ramos">Yoselin Hernandez Ramos</string>
+    <string name="esparrago_1002">Esparrago 1002</string>
+    <string name="_25_m">25 m</string>
+    <string name="no_programado">No programado</string>
+    <string name="_08_00">08:00</string>
+    <string name="_09_30">09:30</string>
+    <string name="_90_minutos">(90 minutos)</string>
+    <string name="_08_00_09_30">08:00 - 09:30</string>
+    <string name="no_hay_nada_aqui">No hay nada aqui</string>
+    <string name="agendar_visita">Agendar visita</string>
+    <string name="fecha_agenda">Fecha</string>
+    <string name="hora">Hora</string>
+    <string name="guardar">Guardar</string>
+    <string name="asunto_de_la_visita">Asunto de la visita</string>
+    <string name="articulos">Articulos</string>
+    <string name="ir_a_maps">Ir a maps</string>
+    <string name="terminar_pedido">Terminar Pedido</string>
+    <string name="cerrar_pedido">Cerrar Pedido</string>
+    <string name="transfer_inicial">Transfer Inicial</string>
+    <string name="transfer_final">Transfer Final</string>
+    <string name="transfer">Transfer</string>
+    <string name="no_hay_transfer_abiertos">No hay transfer abiertos</string>
+    <string name="nuevo_transfer">Nuevo transfer</string>
+    <string name="folio_pedido">2686202411010920</string>
+    <string name="_3_productos_24_cajas">3 productos, 24 cajas</string>
+    <string name="_09_20_hrs">09:20 hrs</string>
+    <string name="kiara">KIARA</string>
+    <string name="cantidad_pedida">CANTIDAD PEDIDA:</string>
+    <string name="cantidad_recibida">CANTIDAD RECIBIDA:</string>
+    <string name="_20_pzs">20 PZS</string>
+    <string name="fue_entregado_pedido_completo">¿Fue entregado pedido completo?</string>
+    <string name="recupero_evidencia_de_factura">¿Recupero evidencia de factura?</string>
+    <string name="cerrar_transfer">Cerrar transfer</string>
+    <string name="seleccione_una_opcion">Seleccione una opcion</string>
+    <string name="capturar_firma">Capturar Firma</string>
+    <string name="guardar_firma">Guardar Firma</string>
+    <string name="limpiar_firma">Limpiar Firma</string>
+    <string name="completo">Completo</string>
+    <string name="todo">TODO</string>
+    <string name="tomar_foto">Tomar foto</string>
+    <string name="elegir_archivo">Elegir archivo</string>
+    <string name="transfer_no_surtido">Transfer no surtido</string>
+    <string name="motivo_de_no_surtido">Motivo de no surtido</string>
+    <string name="nombre_del_documento">Nombre del Documento</string>
+
+
+</resources>

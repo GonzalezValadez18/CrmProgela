@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".clientes.ui.view.editar.Editar_ClientesF3">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarFragment3"
+        android:layout_width="415dp"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginBottom="130dp"/>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:background="@drawable/custom_edit_text"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="14dp">
+
+            <TextView
+                android:id="@+id/txtEncabezado"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/editarEtapa3"
+                android:textAlignment="center"
+                android:textColor="@color/blue_progela"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <!-- Contenedor para el EditText y el botón de búsqueda -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="4dp"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/txtCodigoPostal"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/custom_edit_text"
+                    android:drawableStart="@drawable/baseline_123_24"
+                    android:hint="@string/edit_codigo_postal"
+                    android:inputType="numberSigned"
+                    android:maxLength="6"
+                    android:maxLines="1"
+                    android:padding="8dp"
+                    android:singleLine="true"
+                    android:textColor="@color/blue_progela"
+                    android:textColorHint="#C9C8CA" />
+
+                <Button
+                    android:id="@+id/btn_buscar"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="-3dp"
+                    android:background="@drawable/lupa"
+                    android:backgroundTint="@color/blue_progela"
+                    android:gravity="start"
+                    android:text="@string/btn_buscar"
+                    android:textSize="18sp"
+                    app:cornerRadius="20dp" />
+            </LinearLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                android:layout_width="320dp"
+                android:layout_height="70dp"
+                android:layout_margin="1dp"
+                app:boxStrokeColor="#C9C8CA"
+                app:hintTextColor="#C9C8CA"
+                android:paddingTop="8dp"
+                app:hintAnimationEnabled="false"
+                app:hintEnabled="false">
+
+                <AutoCompleteTextView
+                    android:id="@+id/txtColonia"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/custom_edit_text"
+                    android:completionThreshold="1"
+                    android:drawableStart="@drawable/baseline_moving_24"
+                    android:fontFamily="sans-serif"
+                    android:gravity="center_vertical"
+                    android:imeOptions="actionNext"
+                    android:inputType="none"
+                    android:maxLines="1"
+                    android:paddingStart="8dp"
+                    android:paddingBottom="12dp"
+                    android:singleLine="true"
+                    android:hint="@string/edit_colonia"
+                    android:textColor="@color/blue_progela"
+                    android:textColorHint="#C9C8CA"
+                    android:textSize="18sp"
+                    tools:ignore="RtlSymmetry" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <EditText
+                android:id="@+id/txtAlcaldia"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="0dp"
+                android:background="@drawable/custom_edit_text"
+                android:drawableStart="@drawable/baseline_edit_location_alt_24"
+                android:enabled="false"
+                android:hint="@string/edit_alcaldia"
+                android:inputType="textAutoComplete"
+                android:maxLength="100"
+                android:maxLines="1"
+                android:padding="8dp"
+                android:singleLine="true"
+                android:textColor="@color/blue_progela"
+                android:textColorHint="#C9C8CA" />
+
+            <EditText
+                android:id="@+id/txtEstado"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/custom_edit_text"
+                android:drawableStart="@drawable/baseline_edit_location_alt_24"
+                android:enabled="false"
+                android:hint="@string/edit_estado"
+                android:inputType="textAutoComplete"
+                android:maxLength="100"
+                android:maxLines="1"
+                android:padding="8dp"
+                android:singleLine="true"
+                android:textColor="@color/blue_progela"
+                android:textColorHint="#C9C8CA" />
+
+            <Button
+                android:id="@+id/btnSiguiente"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="15dp"
+                android:backgroundTint="@color/blue_progela"
+                android:text="@string/confirmar"
+                android:textSize="18sp"
+                app:cornerRadius="20dp" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

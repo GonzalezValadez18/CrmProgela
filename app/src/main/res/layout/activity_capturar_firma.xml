@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <com.progela.crmprogela.transfer.ui.view.VistaDeFirma
+        android:id="@+id/signatureView"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:background="#f0f0f0"
+        android:layout_marginBottom="16dp" />
+
+    <Button
+        android:id="@+id/saveButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/guardar_firma" />
+
+    <Button
+        android:id="@+id/clearButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/limpiar_firma"
+        android:layout_marginTop="8dp" />
+
+</LinearLayout>

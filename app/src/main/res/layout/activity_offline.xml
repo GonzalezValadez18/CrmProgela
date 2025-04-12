@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@color/blue_progela"
+    tools:context=".login_offline.view.OfflineActivity">
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="20dp"
+        android:background="@drawable/custom_edit_text">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center_horizontal"
+            android:padding="24dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/login_inicio_offline"
+                android:id="@+id/loginText"
+                android:textSize="36sp"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:textColor="@color/blue_progela"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:id="@+id/txtUser_offline"
+                android:background="@drawable/custom_edit_text"
+                android:drawableStart="@drawable/baseline_person_24"
+                android:padding="8dp"
+                android:textColor="@color/black"
+                android:hint="@string/login_usuario_offline"
+                android:textColorHighlight="@color/black"
+                android:layout_marginTop="20dp"
+                android:inputType="number"
+                android:maxLength="6"
+                android:maxLines="1"
+                android:singleLine="true"/>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                app:passwordToggleEnabled="true">
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:id="@+id/txtPassword_offline"
+                    android:background="@drawable/custom_edit_text"
+                    android:padding="8dp"
+                    android:drawableStart="@drawable/baseline_lock_24"
+                    android:textColor="@color/black"
+                    android:textColorHighlight="@color/black"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:inputType="textPassword"
+                    android:layout_marginTop="20dp"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:id="@+id/btnLogin_offline"
+                android:textSize="18sp"
+                android:layout_marginTop="15dp"
+                android:text="@string/login_btn_autenticar_offline"
+                android:backgroundTint="@color/blue_progela"
+                app:cornerRadius="20dp"/>
+
+            <TextView
+                android:id="@+id/footer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="@string/login_footer_offline"
+                android:textSize="12sp"
+                android:layout_gravity="center_horizontal"
+                android:textStyle="bold"
+                android:textColor="@color/blue_progela"
+                android:layout_marginTop="1dp"/>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/version"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="end"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="1dp"
+        android:padding="8dp"
+        android:text=""
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        android:textStyle="bold" />
+    <ProgressBar
+        android:id="@+id/pgrBar_offline"
+        style="?android:attr/progressBarStyle"
+        android:indeterminateTint="@color/blue_progela"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"/>
+
+</LinearLayout>

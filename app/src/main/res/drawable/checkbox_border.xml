@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Cuadro verde cuando está marcado -->
+    <item android:drawable="@drawable/checkbox_cheked_border" android:state_checked="true"/>
+    <!-- Cuadro gris cuando no está marcado -->
+    <item android:drawable="@drawable/checkbox_unchecked_border" />
+</selector>

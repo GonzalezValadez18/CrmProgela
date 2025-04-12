@@ -1,0 +1,70 @@
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:layout_marginEnd="10dp"
+    android:layout_marginStart="10dp"
+    android:layout_marginTop="16dp"
+    android:background="@drawable/custom_edit_text">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/background_img"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:shapeAppearanceOverlay="@style/RoundedCorners"
+        app:srcCompat="@drawable/pleca_02" />
+
+    <TextView
+        android:id="@+id/fechaHora"
+        android:layout_width="164dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="196dp"
+        android:layout_marginTop="56dp"
+        android:drawablePadding="8dp"
+        android:paddingVertical="9dp"
+        android:text="@string/m_xico"
+        android:textColor="@color/black"
+        app:drawableStartCompat="@drawable/baseline_ciudad"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtRazonSocial"
+        android:layout_width="225dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="96dp"
+        android:drawablePadding="8dp"
+        android:paddingVertical="15dp"
+        android:text="@string/hornos_de_santa_barbara"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:drawableStartCompat="@drawable/baseline_asentamiento"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/motivo"
+        android:layout_width="183dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="52dp"
+        android:drawablePadding="8dp"
+        android:paddingVertical="9dp"
+        android:text="@string/ixtapaluca"
+        android:textColor="@color/black"
+        app:drawableStartCompat="@drawable/baseline_municipio"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

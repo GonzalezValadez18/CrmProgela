@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn= "navigation_view"
+    >
+
+    <group
+        android:checkableBehavior="single">
+
+        <!--<item android:id="@+id/nav_Home"
+            android:icon="@drawable/home"
+            android:title="Inicio" />-->
+
+       <!-- <item android:id="@+id/nav_Prospectosf"
+            android:icon="@drawable/prospecto"
+            android:title="@string/menu_prospectosf"/>-->
+
+        <item android:id="@+id/nav_Prospectosk"
+            android:icon="@drawable/prospecto"
+            android:title="@string/menu_prospectosk"/>
+
+        <item android:id="@+id/nav_Prospectospv"
+            android:icon="@drawable/prospecto"
+            android:title="@string/menu_prospectospv"/>
+
+        <!--<item android:id="@+id/nav_Transfer"
+            android:icon="@drawable/transfer"
+            android:title="Transfer"/>
+
+        <item android:id="@+id/nav_Clientes"
+            android:icon="@drawable/cliente"
+            android:title="Clientes"/>
+
+        <item android:id="@+id/nav_Visitas"
+            android:icon="@drawable/visitas"
+            android:title="Visitas"/>-->
+    </group>
+
+    <item android:id="@+id/nav_Logout"
+        android:icon="@drawable/logout"
+        android:title="Cerrar Sesión"/>
+</menu>

@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="190dp"
+    android:layout_marginEnd="10dp"
+    android:layout_marginStart="10dp"
+    android:layout_marginTop="16dp"
+    android:background="@drawable/custom_edit_text">
+
+    <!--<com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/background_img"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:shapeAppearanceOverlay="@style/RoundedCorners"
+        app:srcCompat="@drawable/pleca_02" />-->
+
+
+    <ImageView
+        android:id="@+id/pic"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="32dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.114"
+        tools:srcCompat="@drawable/ic_1" />
+
+    <TextView
+        android:id="@+id/tittleTxt"
+        android:layout_width="212dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="108dp"
+        android:drawablePadding="8dp"
+        android:paddingVertical="7dp"
+        android:text="@string/yoselin_hernandez_ramos"
+        android:textColor="@color/black"
+        app:drawableLeftCompat="@drawable/baseline_person_pin_24"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tittleDireccion"
+        android:layout_width="212dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="76dp"
+        android:drawablePadding="8dp"
+        android:paddingVertical="7dp"
+        android:text="@string/esparrago_1002"
+        android:textColor="@color/black"
+        app:drawableLeftCompat="@drawable/baseline_where_to_vote_24"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tittleDistancia"
+        android:layout_width="117dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="152dp"
+        android:drawablePadding="4dp"
+        android:paddingVertical="7dp"
+        android:text="@string/_25_m"
+        android:textColor="@color/black"
+        android:textSize="12dp"
+        app:drawableLeftCompat="@drawable/baseline_social_distance_24"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tittleProgramado"
+        android:layout_width="150dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="152dp"
+        android:drawablePadding="8dp"
+        android:paddingVertical="7dp"
+        android:text="@string/no_programado"
+        android:textColor="@color/black"
+        android:textSize="12dp"
+        app:drawableLeftCompat="@drawable/baseline_calendar_month_24"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/priceTxt"
+        android:layout_width="270dp"
+        android:layout_height="73dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="116dp"
+        android:drawableLeft="@drawable/baseline_store_24"
+        android:drawablePadding="8dp"
+        android:paddingVertical="25dp"
+        android:paddingTop="4dp"
+        android:paddingBottom="4dp"
+        android:text="@string/farmacias_juanita_perez"
+        android:textColor="@color/black"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <!--<ImageView
+        android:id="@+id/encuesta"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="320dp"
+        android:layout_marginBottom="16dp"
+        android:src="@drawable/baseline_quiz_red"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />-->
+
+    <TextView
+        android:id="@+id/visitaTxt"
+        android:layout_width="95dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="288dp"
+        android:layout_marginBottom="108dp"
+        android:text=""
+        android:textAlignment="center"
+        android:textSize="10sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="288dp"
+        />
+
+    <TextView
+        android:id="@+id/tittleTipo"
+        android:layout_width="96dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="288dp"
+        android:layout_marginTop="80dp"
+        android:drawablePadding="8dp"
+        android:paddingVertical="7dp"
+        android:text="@string/falta_autorizacion"
+        android:textAlignment="center"
+        android:textColor="@color/red_progela"
+        android:textSize="15dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnNavegar"
+        android:layout_width="90dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="292dp"
+        android:layout_marginTop="128dp"
+        android:text="@string/ir_a_maps"
+        android:textSize="12dp"
+        android:fontFamily="sans-serif-black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

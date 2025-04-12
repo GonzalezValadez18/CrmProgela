@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".transfer.ui.view.transfers.CantidadMedicamento">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarCantidadMedicamneto"
+        android:layout_width="409dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="130dp"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="30dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/custom_edit_text"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="20dp"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="14dp">
+
+            <TextView
+                android:id="@+id/nombreMedicamento"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:textColor="@color/blue_progela"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:text="Ladexgel"
+                />
+
+            <ImageView
+                android:id="@+id/fotoMedicamento"
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:layout_gravity="center_horizontal" />
+            <LinearLayout
+                android:layout_width="220dp"
+                android:layout_height="50dp"
+                android:textAlignment="center"
+                android:layout_gravity="center_horizontal">
+                <ImageView
+                    android:id="@+id/menos"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    app:srcCompat="@drawable/baseline_menos"
+                    android:layout_gravity="center_horizontal" />
+
+                <EditText
+                    android:id="@+id/etCantidad"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/custom_edit_text"
+                    android:drawablePadding="8dp"
+                    android:fontFamily="sans-serif"
+                    android:text="0"
+                    android:inputType="numberDecimal"
+                    android:maxLines="1"
+                    android:textAlignment="center"
+                    android:textColor="@color/blue_progela"
+                    android:textColorHint="@color/blue_progela"
+                    android:textSize="20sp" />
+
+                <ImageView
+                    android:id="@+id/mas"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    app:srcCompat="@drawable/baseline_mas"
+                    android:layout_gravity="center_horizontal"/>
+        </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_marginTop="30dp"
+                android:orientation="horizontal">
+
+
+                <Button
+                    android:id="@+id/btnAgregar"
+                    android:layout_width="150dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10sp"
+                    android:layout_gravity="center_horizontal"
+                    android:backgroundTint="@color/blue_progela"
+                    android:text="@string/textAgregar"
+                    android:textSize="18sp"
+                    app:cornerRadius="20dp"
+                    />
+
+                <Button
+                    android:id="@+id/btnCancelar"
+                    android:layout_width="150dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10sp"
+                    android:layout_gravity="center_horizontal"
+                    android:backgroundTint="@color/blue_progela"
+                    android:text="@string/textCancelar"
+                    android:textSize="18sp"
+                    app:cornerRadius="20dp"
+                    />
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+</LinearLayout>

@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login1"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".login.view.MainActivity"
+    android:importantForAccessibility="no">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:background="@drawable/custom_edit_text"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="20dp"
+        android:importantForAccessibility="no">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="24dp"
+            android:importantForAccessibility="no"
+            >
+
+            <TextView
+                android:id="@+id/loginText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/login_inicio"
+                android:textAlignment="center"
+                android:textColor="@color/blue_progela"
+                android:textSize="36sp"
+                android:textStyle="bold"
+                android:importantForAccessibility="no"/>
+
+            <EditText
+                android:id="@+id/txtUser"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:autofillHints=""
+                android:background="@drawable/custom_edit_text"
+                android:drawableStart="@drawable/baseline_person_24"
+                android:hint="@string/login_usuario"
+                android:importantForAccessibility="no"
+                android:inputType="number"
+                android:maxLength="6"
+                android:maxLines="1"
+                android:padding="8dp"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textColorHighlight="@color/black"
+                />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                app:passwordToggleEnabled="true"
+                android:importantForAccessibility="no">
+
+                <EditText
+                    android:id="@+id/txtPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/custom_edit_text"
+                    android:drawableStart="@drawable/baseline_lock_24"
+                    android:inputType="textPassword"
+                    android:maxLines="1"
+                    android:padding="8dp"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textColorHighlight="@color/black"
+                    android:backgroundTint="@null"
+                android:importantForAccessibility="no"
+                android:autofillHints="password"
+                />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+
+            <Button
+                android:id="@+id/btnLogin"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="15dp"
+                android:backgroundTint="@color/blue_progela"
+                android:text="@string/login_btn_autenticar"
+                android:textSize="18sp"
+                app:cornerRadius="20dp"
+                android:importantForAccessibility="no"/>
+
+            <TextView
+                android:id="@+id/footer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="1dp"
+                android:padding="8dp"
+                android:text="@string/login_footer"
+                android:textColor="@color/blue_progela"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:importantForAccessibility="no"/>
+
+            <TextView
+                android:id="@+id/version"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="1dp"
+                android:padding="8dp"
+                android:text="V.App 3.1 V.Code 3 V.DB 3"
+                android:textColor="@color/blue_progela"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:importantForAccessibility="no"/>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <ProgressBar
+        android:id="@+id/pgrBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:indeterminateTint="@color/blue_progela"
+        android:visibility="gone"
+        android:importantForAccessibility="no"/>
+
+
+</LinearLayout>
+

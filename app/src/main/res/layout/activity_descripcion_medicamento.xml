@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".catalogos.ui.view.medicamentos.Descripcion_Medicamento">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarDescripcionArticulo"
+        android:layout_width="409dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="70dp"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="30dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/custom_edit_text"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="20dp"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="14dp">
+
+            <TextView
+                android:id="@+id/nombreMedicamento"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:textColor="@color/blue_progela"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:text="Ladexgel"
+                />
+
+            <ImageView
+                android:id="@+id/fotoMedicamento"
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:layout_gravity="center_horizontal" />
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:background="@drawable/custom_edit_text"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:paddingStart="5dp"
+                android:paddingEnd="5dp"
+                android:fillViewport="true">
+
+                <TextView
+                    android:id="@+id/etDescripcion"
+                    android:layout_width="320dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="textMultiLine"
+                    android:textAlignment="inherit"
+                    android:hint="@string/textComentarios"
+                    android:maxLines="20"
+                    android:scrollbars="vertical"
+                    android:focusable="true"
+                    android:clickable="true"
+                    android:textSize="12sp"
+                    android:textColor="@color/blue_progela_dark"
+                    tools:ignore="LabelFor,RtlSymmetry,TextViewEdits"/>
+            </ScrollView>
+
+
+
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+</LinearLayout>

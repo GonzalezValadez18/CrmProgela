@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".transfer.ui.view.Postventa">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarPostventa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nestedScrollView"
+        android:layout_width="415dp"
+        android:layout_height="749dp"
+        android:background="@color/white"
+        android:paddingBottom="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbarPostventa"
+        app:layout_constraintVertical_bias="0.0">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/viewPostventa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/trans"
+            android:paddingTop="10dp" />
+    </androidx.core.widget.NestedScrollView>
+
+ <!-- ><androidx.core.widget.NestedScrollView
+
+        android:id="@+id/nestedScrollView2"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:background="@drawable/custom_edit_text"
+        android:paddingTop="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbarPostventa"
+        app:layout_constraintVertical_bias="0.40">
+
+        <TextView
+            android:id="@+id/txtPedido"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:text="SU PEDIDO"
+            android:textAlignment="center"
+            android:textSize="15sp">
+
+        </TextView>
+
+    </androidx.core.widget.NestedScrollView> -->
+
+    <Button
+        android:id="@+id/btnFinalizarTransfer"
+        android:layout_width="0dp"
+        android:layout_height="70dp"
+        android:backgroundTint="@color/green_progela"
+        android:drawableLeft="@drawable/baseline_handshake_24"
+        android:text="@string/cerrar_transfer"
+        android:fontFamily="sans-serif-black"
+        android:paddingVertical="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.364"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbarPostventa"
+        app:layout_constraintVertical_bias="0.978" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

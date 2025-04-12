@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Estilo para el Dropdown -->
+    <style name="CustomDropdown" parent="ThemeOverlay.MaterialComponents">
+        <item name="android:popupBackground">@drawable/custom_dropdown_background</item>
+        <item name="android:dropDownVerticalOffset">8dp</item>
+        <item name="android:dropDownHorizontalOffset">0dp</item>
+    </style>
+</resources>
